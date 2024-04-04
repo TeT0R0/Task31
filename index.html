@@ -1,0 +1,139 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The American Interest</title>
+
+    <!-- css style -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/ai-icon.png" type="image/png" />
+
+
+    <!-- Font awsome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+   
+    <div class="container">
+        <header id="header">
+            <a href="index.html"><img class="nav-logo" src="img/logo.jpg" alt="logo-img"></a>
+            <nav class="navbar">
+                <form action="#" class="navbar-search">
+                    <input class="search" type="text" placeholder="Search..." name="search">
+                    <button type="submit" <i class="search-btn fas fa-search"></i></button>
+                </form>
+                <div class="hamburger-menu">
+                    <div>
+                        <img src="img/menu.svg" alt="menu-img">
+                    </div>
+                    <form action="#">
+                        <input class="search" type="text" placeholder="Search..." name="search">
+                        <button type="submit" <i class="search-btn fas fa-search"></i></button>
+                    </form>
+                </div>
+                <ul>
+                    <li><a href="#">ESSAYS</a></li>
+                    <li><a href="#">REVIEWS</a></li>
+                    <li><a href="#">VIEWPOINTS</a></li>
+                    <li><a href="#">CONVERSATIONS</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main">
+            <aside>
+                <div class="aside-header">
+                    <h2>VIEWPOINTS</h2>
+                    <p>From TAI's Contributing Editors</p>
+                </div>
+                <div id="aside-content-placeholder">
+                </div>
+                <a class="aside-back" href="#">older posts <i
+                        class="aside-back-icon fas fa-long-arrow-alt-down"></i></a>
+            </aside>
+            <section class="features">
+                <div class="features-header">
+                    <div>
+                        <a href="#"><img src="img/heading-img-sm.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <h1><a href="#">A Letter to TAI’s Subscribers and Readers</a></h1>
+                        <a href="#"><span>CHARLES DAVIDSON</span></a>
+                    </div>
+                </div>
+                <div class="features-cont" id="features-cont-placeholder">
+                </div>
+                <div class="features-old">
+                    <div>
+                        <a href="#">
+                            <img src="img/features-old.jpg" alt="poster-img">
+                            <span>September/October 2020</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/features-old.jpg" alt="poster-img">
+                            <span>September/October 2020</span>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="#">
+                            <img src="img/features-old.jpg" alt="poster-img">
+                            <span>September/October 2020</span>
+                        </a>
+                    </div>
+                    <div class="features-old-all">
+                        <span class="old-all"><a href="#">view all back issues</a></span>
+                        <div class="socials">
+                            <span>follow us</span>
+                            <ul>
+                                <li class="rss"><a href="https://rss.com/"><i class="fas fa-rss"></i></a></li>
+                                <li class="facebook"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="twitter"><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+            </section>
+    </main>
+        <footer id="footer">
+            <span class="copyright">&copy; The American Interest LLC 2005-2021</span>
+            <nav>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">privacy</a></li>
+                </ul>
+            </nav>
+            <span class="statement">We are a participant in the Amazon Services LLC Associates Program, an affiliate
+                advertising program
+                designed to provide a means for us to earn fees by linking to Amazon.com and affiliated sites.</span>
+        </footer>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#aside-content-placeholder').load('aside.php');
+            $('#features-cont-placeholder').load('content.php')
+        });
+        
+    </script>
+</body>
+
+</html>
